@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/vegetables"
+        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.50"
+        android:layout_marginBottom="53dp"
+        android:contentDescription="Vegetables"
+        app:layout_constraintBottom_toTopOf="@+id/Total_Calories"
+        app:layout_constraintEnd_toStartOf="@+id/vegetableServings"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/protein"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.5"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Protein"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBases"
+        app:layout_constraintEnd_toStartOf="@+id/proteinServings"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/bases"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.5"
+        android:layout_marginBottom="27dp"
+        android:contentDescription="Bases"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVegeTables"
+        app:layout_constraintEnd_toStartOf="@+id/basesServings"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewProtein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein"
+        app:layout_constraintBottom_toTopOf="@+id/protein"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bases"
+        app:layout_constraintBottom_toTopOf="@+id/bases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVegeTables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vegetables"
+        app:layout_constraintBottom_toTopOf="@+id/vegetableServings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Total_Calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Total Calories"
+        app:layout_constraintBottom_toTopOf="@+id/calorieCounter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/calorieCounter"
+        android:layout_width="55dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/proteinServings"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.5"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Number of Servings"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBases"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/protein" />
+
+    <EditText
+        android:id="@+id/basesServings"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.5"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Number of Servings"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVegeTables"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bases" />
+
+    <EditText
+        android:id="@+id/vegetableServings"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:hint="Number of Servings"
+        android:inputType="number"
+        android:text="0"
+        android:layout_weight="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/Total_Calories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vegetables" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

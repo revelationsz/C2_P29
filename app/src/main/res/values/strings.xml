@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">foodTracker</string>
+
+    <string-array name="protein">
+        <item>None</item>
+        <item>Stake</item>
+        <item>Turkey</item>
+        <item>Salmon</item>
+        <item>Pork</item>
+        <item>Sausages</item>
+        <item>Chicken</item>
+    </string-array>
+
+
+    <string-array name="bases">
+        <item>None</item>
+        <item>Pasta</item>
+        <item>Orzo</item>
+        <item>Quinoa</item>
+        <item>Potatoes</item>
+        <item>Rice</item>
+    </string-array>
+
+
+    <string-array name="vegtables">
+        <item>None</item>
+        <item>Salad</item>
+        <item>Brussels Sprouts</item>
+        <item>Asparagus</item>
+        <item>Onion</item>
+        <item>Cabbage</item>
+        <item>Cucumber</item>
+        <item>Broccoli</item>
+    </string-array>
+
+</resources>
